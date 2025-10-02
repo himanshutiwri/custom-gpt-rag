@@ -2,7 +2,7 @@ import os
 from PyPDF2 import PdfReader
 from sentence_transformers import SentenceTransformer
 import faiss
-import pickle  # to save your FAISS index and chunks
+import pickle  # to save  FAISS index and chunks
 
 # 1. Load PDF files
 pdf_folder = os.path.join(os.path.dirname(__file__), '../pdfs')

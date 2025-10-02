@@ -149,6 +149,8 @@ Thumbs.db
 # PDFs / Large files (optional)
 *.pdf
 
+faiss_index.pkl
+
 
 
 

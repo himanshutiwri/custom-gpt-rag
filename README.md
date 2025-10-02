@@ -1,8 +1,12 @@
+
+---
+
 # **CustomGPT Chat Application with RAG**
+
 CustomGPT is an AI-powered chat application that allows users to interact with a conversational AI model. This project also integrates **RAG (Retrieval-Augmented Generation)** to provide answers based on specific PDF documents, making responses more accurate and context-aware.
 
-
 ### **Features:**
+
 * User-friendly chat interface
 * Concise responses for general queries
 * Detailed explanations for programming or technical questions
@@ -11,6 +15,7 @@ CustomGPT is an AI-powered chat application that allows users to interact with a
 * Contextual responses based on uploaded documents
 
 ### **RAG Implementation:**
+
 This project uses **RAG (Retrieval-Augmented Generation)** to enhance AI responses.
 
 * The chatbot can search through PDFs and retrieve relevant information to answer user queries.
@@ -39,6 +44,9 @@ Groq API (or AI Model) generates answer using retrieved content
     ▼
 Answer displayed to user
 ```
+
+* This ensures that answers are **contextual and sourced from the PDFs** you added.
+
 ### **Prerequisites:**
 
 * Anaconda or Miniconda
@@ -48,12 +56,14 @@ Answer displayed to user
 
 1. **Create a Conda Environment:**
 
-   ```conda create -n gptenv python==3.10 -y
+   ```
+   conda create -n gptenv python==3.10 -y
    ```
 
 2. **Activate the Environment:**
 
-   ```conda activate gptenv
+   ```
+   conda activate gptenv
    ```
 
 3. **Install Requirements:**
@@ -64,12 +74,17 @@ Answer displayed to user
 
 4. **Run the Application:**
 
-python app.py
-   
+   ```
+   python app.py
+   ```
 
 ### **Usage:**
 
 * Open your browser and navigate to `http://127.0.0.1:5000/`.
 * Ask general or technical questions.
 * Queries related to **Climate Change** or **Machine Learning** will utilize **RAG** to provide answers directly from the PDFs.
+
+---
+
+
 

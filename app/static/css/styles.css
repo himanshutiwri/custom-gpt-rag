@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center content horizontally */
+    position: relative; /* Position relative for absolute positioning of logo */
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styles */
+.logo {
+    width: 40px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position it absolutely */
+    left: 10px; /* Align it to the left with some margin */
+}
+
+.header h1 {
+    margin-left: 50px; /* Add margin to accommodate the logo size */
+}
+
+/* Chat Area */
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+/* Chat Box */
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px 0;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the messages horizontally */
+}
+
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 3px;
+}
+
+/* Messages */
+.message {
+    max-width: 80%; /* Covers 80% of the UI width */
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    font-size: 0.85rem;
+    display: flex;
+}
+
+/* User Message */
+.user-message {
+    background-color: #d4edda;
+    color: #155724;
+    text-align: right;
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+/* AI Message */
+.ai-message {
+    background-color: #e8f4fc;
+    color: #0a74da;
+    text-align: left;
+    align-self: flex-start; /* Align AI messages to the left */
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+textarea {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 0.85rem;
+    outline: none;
+    resize: none;
+    height: 40px;
+    background: white;
+}
+
+textarea::placeholder {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
+}
+
+button {
+    padding: 6px 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+/* Code Block Styles */
+.code-block {
+    background-color: #f8f9fa; /* Light background for code blocks */
+    border: 1px solid #e0e0e0; /* Border around code block */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside code blocks */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    font-family: 'Courier New', monospace; /* Monospace font for code */
+ }
+ 
+ /* General styles for lists */
+ ul {
+    padding-left: 20px; /* Indent list items */
+ }
+ 
+ li {
+    margin-bottom: 5px; /* Space between list items */
+ }

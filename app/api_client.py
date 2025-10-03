@@ -25,7 +25,7 @@ class GroqClient:
             self.logger.info("Sending messages to Groq API...")
             chat_completion = self.client.chat.completions.create(
                 messages=messages,
-                model="llama-3.1-8b-instant"# Use the appropriate model for general use
+                model="llama-3.3-70b-versatile"# Use the appropriate model for general use
             )
             response = chat_completion.choices[0].message.content
             self.logger.info("Received response from Groq API.")
